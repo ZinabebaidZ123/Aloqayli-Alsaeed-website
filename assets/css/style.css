@@ -1,0 +1,344 @@
+/* global style ---------------------------- */
+:root {
+    --dark-color: #25316d;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+  }
+  body {
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: var(--dark-color) !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 1rem  !important;
+
+  }
+  @media (min-width:993px) and (max-width:1199px){
+    .navbar a{
+      font-size: 0.9rem !important;
+      
+    }
+    .icon span{
+       font-size: 0.8rem;
+       
+    }
+   
+  }
+  section{
+    margin-top: 8rem;
+    padding: 3rem;
+  
+  }
+  p{
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+  h2{
+    color: var(--dark-color);
+    font-size: 3rem;
+    font-weight: bold;
+    position:relative;
+    z-index: 666666666;
+    margin-bottom: 3.5rem;
+    
+  }
+  h3{
+    color: var(--green-color);
+    margin-top: 1.5rem;
+  }
+  h5{
+    color:var(--dark-color);
+    margin-bottom: 1.5rem;
+  }
+
+  ul li{
+    line-height: 2;
+    margin-bottom: 0.5rem;
+  }
+  /* media query */
+  @media (min-width:300px) {
+    html{
+          font-size: 11px;
+    }
+    img{
+        width: 60%;
+    }
+   
+}
+
+@media (min-width:567px) {
+    html{
+          font-size: 13px;
+    }
+    img{
+        width: 70%;
+    }
+   
+}
+@media (min-width:768px){
+    html{
+        font-size: 14px;
+    }
+    img{
+        width: 80%;
+    }
+  
+}
+@media (min-width:992px){
+    html{
+        font-size: 16px;
+    }
+    img{
+        width: 100%;
+    }
+}
+  
+
+  /* navbar style------------------------- */
+  .navbar{
+    position: fixed !important;
+    top:0;
+    left: 0;
+    z-index: 99999999999999 !important;
+    background-color: #fff !important;
+    width: 100%;
+
+  }
+  .navbar .navbar-toggler{
+    color: var(--dark-color);
+    font-size: 2rem;
+ 
+  }
+  .navbar img{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* banner section style------------------------------------ */
+  .banner{
+    background-image: url("../images/banner1.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+  
+position: relative;
+  }
+  @media(min-width:350px) and (max-width:1200px){
+    .banner{
+      height: 40vh;
+    }
+  }
+
+  .banner__content{
+    height: 100%;
+    z-index: 3333;
+  }
+  .banner__content img{
+
+    position: absolute;
+    width: 15%;
+  }
+  /* about section style----------------------------------- */
+
+  .about__content{
+    text-align: justify;
+  }
+  .about__img{
+    border: 0.8rem solid var(--dark-color);
+    height: 80%;
+  }
+  .about__img img{
+    width: 100%;
+  }
+  .about img{
+    width: 100%;
+    height: 100%;
+  }
+  /* history section style--------------------------------------- */
+
+  .history .card{
+    padding: 3rem;
+    border-right: 1rem solid var(--dark-color);
+    margin: 3rem auto;
+    transition: 1s ease-in-out;
+    text-align: justify;
+  }
+  .history .card:hover{
+    transform: translateY(-1rem);
+
+  }
+
+  /* clients style  */
+
+  .clients .box{
+    width: 30%;
+
+  }
+  .clients .box img{
+    width: 60%;
+  }
+  .clients .img-box{
+    width: 30%;
+  }
+  /* .clients .logo{
+    width: 60%;
+  } */
+  .client-img{
+    width:100%;
+    height: 100%;
+  }
+  .client-img img{
+    width: 100%;
+    height: 80%;
+    border: 1rem solid var(--dark-color);
+  }
+  .clients .img1{
+    background-color: #fff;
+  }
+  @media (max-width: 992px){
+     .clients .img1{
+      display: none !important;
+     }
+  }
+
+  /* goals section style */
+ 
+  .goal {
+    background-color: var(--section-color);
+  }
+  .goal .card{
+     border-radius: 2rem;
+     padding: 3rem;
+     margin-top: 2rem;
+     background-color: #fff;
+     transition: 1s ease-in-out;
+     margin-bottom: 3rem;
+  }
+  .goal .card:hover{
+    transform: scale(1.1);
+  }
+  .goal .card i{
+    color: var(--dark-color);
+    margin-left: 1rem;
+  }
+  .goal .card h3{
+    color : var(--green-color);
+  }
+
+/* service style section  */
+.service{
+  position: relative;
+}
+.service .top-img{
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+  left:70%;
+  width: 30%;
+  z-index: -11;
+}
+/* .service .top-img img{
+  width:20%;
+} */
+.service .bottom-img{
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 40%;
+  z-index: -11;
+}
+.service .container{
+
+  padding-top: 2rem;
+}
+.service .top-data{
+  margin-bottom: 5rem;
+}
+.service i {
+  margin-left: 0.3rem;
+  color: var(--dark-color);
+  font-size: 1rem;
+}
+/* .service .top-data-more{
+  display: none;
+} */
+.service button{
+  background-color: var(--dark-color);
+  color: var(--green-color);
+  padding: 0.6rem 0.4rem;
+  border-radius: 0.5rem;
+}
+.service button:hover{
+  background-color: var(--green-color);
+  color: var(--dark-color);
+}
+/* start our team section */
+.our-team {
+  padding-top: 2rem;
+}
+  /* about section style----------------------------------- */
+ 
+.our-team-card{
+  height: 40rem;
+  padding: 1rem ;
+  background-color: var(--section-color);
+  border-radius: 10%;
+  margin-left: 1rem;
+
+}
+.our-team-card h3 , .our-team-card h5{
+  margin-right: 2rem;
+}
+.our-team-card i{
+  position: relative;
+  right: 50%;
+  /* left: 50%; */
+top: -5%;
+  transform: translate(50% );
+  font-size: 4rem;
+  color: var(--dark-color);
+
+}
+/* quality section style */
+.quality h {
+  padding-bottom : 2rem;
+}
+
+.quality-img{
+  width: 100%;
+}
+.quality-img img{
+  width: 100%;
+}
+.quality-content{
+  text-align: justify;
+}
+/* footer section style */
+footer{
+  background-color: var(--dark-color);
+  padding: 4rem;
+  color: #fff;
+}
+footer i{
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+footer  a{
+  color:#fff;
+  text-decoration: none;
+}
+.footer-logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-logo img{
+  width: 10%;
+  margin-bottom: 2rem;
+}
