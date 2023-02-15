@@ -65,9 +65,11 @@
     html{
           font-size: 11px;
     }
+
     img{
-        width: 60%;
+        width: 70%;
     }
+  
    
 }
 
@@ -142,7 +144,7 @@ position: relative;
   .banner__content img{
 
     position: absolute;
-    width: 15%;
+    width: 20%;
   }
   /* about section style----------------------------------- */
 
@@ -243,9 +245,7 @@ position: relative;
   width: 30%;
   z-index: -11;
 }
-/* .service .top-img img{
-  width:20%;
-} */
+
 .service .bottom-img{
   position: absolute;
   left: 0;
@@ -265,9 +265,7 @@ position: relative;
   color: var(--dark-color);
   font-size: 1rem;
 }
-/* .service .top-data-more{
-  display: none;
-} */
+
 .service button{
   background-color: var(--dark-color);
   color: var(--green-color);
@@ -291,6 +289,14 @@ position: relative;
   border-radius: 10%;
   margin-left: 1rem;
 
+}
+@media (min-width:300px) and (max-width:380px){
+  .our-team-card{
+    height:  47rem;
+  padding-bottom: 1rem;
+
+  }
+     
 }
 .our-team-card h3 , .our-team-card h5{
   margin-right: 2rem;
