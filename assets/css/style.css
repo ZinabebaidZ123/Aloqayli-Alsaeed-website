@@ -8,6 +8,9 @@
   }
   body {
     font-family: 'Cairo', sans-serif;
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+
+    /* font-family: 'Open Sans', sans-serif; */
     scroll-behavior: smooth;
   }
   .navbar a{
@@ -67,7 +70,7 @@
     }
 
     img{
-        width: 70%;
+        width: 80%;
     }
   
    
@@ -207,7 +210,32 @@ position: relative;
      .clients .img1{
       display: none !important;
      }
-  }
+    }
+    /* .clients .nusr-logo{
+      width:10% ;
+     
+    } */
+    .haker-logo{
+      position: relative;
+      left: 4%;
+    }
+    
+     /* transform: translateX(2.8rem); */
+
+    
+    .img-box-logo{
+      width: 13%;
+     
+      position: relative;
+      left: 5%;
+    }
+    /* .img-logo{
+      width: 20%;
+    }
+    .img-logo img{
+       width: 50%;
+    }
+   */
 
   /* goals section style */
  
@@ -283,8 +311,8 @@ position: relative;
   /* about section style----------------------------------- */
  
 .our-team-card{
-  height: 40rem;
-  padding: 1rem ;
+  height: 44rem;
+  padding: 0.5rem ;
   background-color: var(--section-color);
   border-radius: 10%;
   margin-left: 1rem;
@@ -292,7 +320,7 @@ position: relative;
 }
 @media (min-width:300px) and (max-width:380px){
   .our-team-card{
-    height:  47rem;
+    height:  56rem;
   padding-bottom: 1rem;
 
   }
