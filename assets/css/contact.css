@@ -13,10 +13,15 @@
     background-size: cover;
     background-position: center;
 }
+@media(min-width:350px) and (max-width:1200px){
+    .contact-banner{
+      height: 40vh;
+    }
+  }
 h1{
     font-size: 3rem;
     color: var(--dark-color);
-    /* border-bottom: 0.5rem solid var(--green-color); */
+  
     width: fit-content;
    
 }
@@ -33,9 +38,7 @@ h1::after{
     background-color: var(--section-color);
     margin-top: 0;
 }
-.contact-content .col-lg-3{
-    /* background-color: #fff; */
-}
+
 .contact-content .content{
     padding: 1.5rem;
     height: 15rem;
